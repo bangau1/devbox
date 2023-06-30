@@ -1,5 +1,10 @@
 {
   "packages": [
+    "go@latest",
+    "kubectl@1.25.3",
+    "kubectx@latest",
+    "awscli2@latest",
+    "stern@latest",
     "git@latest",
     "htop@latest",
     "gh@latest",
