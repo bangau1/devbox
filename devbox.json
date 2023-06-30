@@ -2,6 +2,9 @@
   "packages": [
     "go@latest",
     "kubectl@1.25.3",
+    "terraform@latest",
+    "terragrunt@latest",
+    "kubergrunt@latest",
     "kubectx@latest",
     "awscli2@latest",
     "stern@latest",
@@ -23,7 +26,8 @@
     "nodejs@latest",
     "python3Full@latest",
     "bat@latest",
-    "direnv@latest"
+    "direnv@latest",
+    "oh-my-zsh@latest"
   ],
   "env": {
     "DEVBOX_GLOBAL_PREFIX": "$HOME/.local/share/devbox/global/default/.devbox/nix/profile/default",
@@ -34,23 +38,23 @@
       ". ${DEVBOX_GLOBAL_ROOT}/init.sh"
     ],
     "scripts": {
-       "install-hook-bash": [
+      "install-hook-bash": [
         "echo adding 'devbox global shellenv' to ~/.bashrc",
-        "grep -qF 'devbox global shellenv' ~/.bashrc || echo 'eval \"$(devbox global shellenv --init-hook)\"' \u003e\u003e ~/.bashrc",
+        "grep -qF 'devbox global shellenv' ~/.bashrc || echo 'eval \"$(devbox global shellenv --init-hook)\"' >> ~/.bashrc",
         "tail -n 1 ~/.bashrc"
       ],
       "install-hook-zsh": [
         "echo adding 'devbox global shellenv' to ~/.zshrc",
-        "grep -qF 'devbox global shellenv' ~/.zshrc || echo 'eval \"$(devbox global shellenv --init-hook)\"' \u003e\u003e ~/.zshrc",
+        "grep -qF 'devbox global shellenv' ~/.zshrc || echo 'eval \"$(devbox global shellenv --init-hook)\"' >> ~/.zshrc",
         "tail -n 1 ~/.zshrc"
       ],
       "latest-hash": [
         "curl -fsSL https://nixos.org/channels/nixos-unstable/git-revision"
       ],
       "npm-global": [
-        "grep -qF '.npm-packages' ~/.npmrc || echo 'prefix=~/.npm-packages' \u003e\u003e ~/.npmrc",
-        "grep -qF '.npm-packages' ~/.zshrc || echo 'export PATH=$PATH:~/.npm-packages/bin' \u003e\u003e ~/.zshrc",
-        "grep -qF '.npm-packages' ~/.bashrc || echo 'export PATH=$PATH:~/.npm-packages/bin' \u003e\u003e ~/.bashrc",
+        "grep -qF '.npm-packages' ~/.npmrc || echo 'prefix=~/.npm-packages' >> ~/.npmrc",
+        "grep -qF '.npm-packages' ~/.zshrc || echo 'export PATH=$PATH:~/.npm-packages/bin' >> ~/.zshrc",
+        "grep -qF '.npm-packages' ~/.bashrc || echo 'export PATH=$PATH:~/.npm-packages/bin' >> ~/.bashrc",
         "mkdir -p ~/.npm-packages"
       ]
     }

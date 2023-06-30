@@ -1,6 +1,11 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "awscli2@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#awscli2",
+      "version": "2.11.15"
+    },
     "bat@latest": {
       "last_modified": "2023-05-01T16:53:22Z",
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#bat",
@@ -41,6 +46,11 @@
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#glab",
       "version": "1.28.0"
     },
+    "go@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#go",
+      "version": "1.20.3"
+    },
     "htop@latest": {
       "last_modified": "2023-05-01T16:53:22Z",
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#htop",
@@ -50,6 +60,21 @@
       "last_modified": "2023-05-01T16:53:22Z",
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#jq",
       "version": "1.6"
+    },
+    "kubectl@1.25.3": {
+      "last_modified": "2022-10-30T06:17:19Z",
+      "resolved": "github:NixOS/nixpkgs/f38a1f04d1bec1feb61fd101a0539ae2002a7087#kubectl",
+      "version": "1.25.3"
+    },
+    "kubectx@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#kubectx",
+      "version": "0.9.4"
+    },
+    "kubergrunt@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#kubergrunt",
+      "version": "0.11.2"
     },
     "lazygit@latest": {
       "last_modified": "2023-05-01T16:53:22Z",
@@ -71,6 +96,11 @@
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#nodejs_20",
       "version": "20.0.0"
     },
+    "oh-my-zsh@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#oh-my-zsh",
+      "version": "2023-04-21"
+    },
     "python3Full@latest": {
       "last_modified": "2023-05-01T16:53:22Z",
       "plugin_version": "0.0.1",
@@ -81,6 +111,21 @@
       "last_modified": "2023-05-01T16:53:22Z",
       "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#ripgrep",
       "version": "13.0.0"
+    },
+    "stern@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#stern",
+      "version": "1.25.0"
+    },
+    "terraform@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#terraform",
+      "version": "1.4.6"
+    },
+    "terragrunt@latest": {
+      "last_modified": "2023-05-01T16:53:22Z",
+      "resolved": "github:NixOS/nixpkgs/8670e496ffd093b60e74e7fa53526aa5920d09eb#terragrunt",
+      "version": "0.45.5"
     },
     "tree-sitter@latest": {
       "last_modified": "2023-05-01T16:53:22Z",
